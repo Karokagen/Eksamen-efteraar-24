@@ -1,0 +1,86 @@
+/*CSS til ekstra der kun gælder for info siden*/
+h2{
+    width: auto;
+padding: 0px;
+margin: 20px;
+}
+
+.info{
+    width: auto; /* Adjust the width of the divider */
+padding: 0px;
+margin: 20px;
+}
+
+.content-section{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.part img {
+    max-width: 300px;
+    margin: 0 10px;
+}
+
+
+.part {
+    display: flex;
+    justify-content: space-between;
+    width: auto; /* Adjust the width of the divider */
+padding: 0px;
+margin: 20px;
+}
+
+/*Social medie*/
+.social-links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+/*Adresse*/
+.address-map {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.address-map img {
+    max-width: 300px;
+    border: 1px solid #ddd;
+}
+
+.partners {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/*Partners*/
+.partners img {
+    max-width: 150px;
+    margin: 0 10px;
+}
+
+
+/* Media Query for mindre skærme */
+@media (max-width: 768px) {
+    .part {
+        flex-direction: column; /* Ændrer layout til vertikalt */
+        
+    }
+
+    .image img {
+        margin-top: 10px; /* Lidt afstand mellem tekst og billede */
+    }
+
+    .partners{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center; /* Centrerer teksten */
+
+    }
+
+}

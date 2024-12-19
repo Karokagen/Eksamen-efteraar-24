@@ -1,0 +1,340 @@
+:root {
+    --Black:#191924;
+    --blaa:#44445f;
+    --Mlilla:#80455E;
+    --Lilla:#b36b96;
+    --Lyserød:#cc5a71;
+    --hvid:#faf5f6;
+    --Guld:#ae875b;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--hvid);
+    
+    background: var(--Black);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 40%, rgba(68,68,95,1) 55%, rgba(128,71,94,1) 70%, rgba(179,107,150,1) 85%, rgba(204,90,113,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover; /* Strækker baggrunden til at dække hele body */
+}
+
+
+header {
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+header .menu {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    font-size: 500%;
+    cursor: pointer;
+    color: #fff;
+}
+header img {
+    width: 100%;
+    height: auto;
+    }
+
+
+
+
+    .mySlides {display: none}
+img {vertical-align: middle;}
+
+
+/* Header container */
+header {
+    position: relative;
+    padding: 10px 0;
+}
+
+/* Flexbox layout for the top bar */
+.top {
+    display: flex; /* Arrange items in a row */
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items to the left */
+    padding: 0 20px; /* Add some spacing around the top bar */
+    gap: 10px; /* Add space between menu and logo */
+}
+
+/* Menu icon styling */
+.menu {
+    font-size: 24px; /* Adjust menu icon size */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Logo styling */
+.logo {
+    position: absolute;
+    margin-top: 30px;
+   margin-left : 100px;
+    height: 100px; /* Set logo height to 50px */
+    width: auto; /* Maintain the aspect ratio */
+}
+
+/* Header image styling */
+.header-image {
+    width: 100%; /* Ensure the header image spans the full width */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Prevent extra spacing below the image */
+}
+
+
+
+.divider {
+    border-top: 2px solid white; /* Line style */
+    width: auto; /* Adjust the width of the divider */
+    padding: 0px;
+    margin: 20px;
+}
+
+
+
+
+    h1{
+        text-align: center;
+    }
+    .sections {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+    }
+    .sections .box {
+        border: 1px solid #ddd;
+        padding: 20px;
+        text-align: center;
+        flex: 1;
+    }
+    
+
+
+
+
+
+    .newsletter {
+width: auto;
+padding: 20px;
+border: 1px solid #d3d3d3;
+text-align: center;
+margin: 20px;
+background: rgb(4,4,7);
+background: linear-gradient(90deg, rgba(4,4,7,1) 0%, rgba(78,78,156,1) 15%, rgba(146,146,252,1) 50%, rgba(78,78,156,1) 85%, rgba(53,51,85,1) 100%);
+}
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+width: 20%;
+padding: 10px;
+margin: 10px 0;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+.name-fields {
+display: flex;
+justify-content: center;
+gap: 10px;
+width: 100%;
+}
+.name-fields input[type="text"] {
+width: 20%;
+}
+.newsletter button {
+width: 20%;
+padding: 10px 20px;
+background-color: #44445f; 
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+margin-top: 10px;
+}
+.newsletter button:hover {
+background-color: #3a3a49; 
+}
+
+
+    .reviews {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    .reviews .review-box {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+        flex: 1;
+        margin: 5px;
+    }
+
+
+
+
+
+    /*Info only*/
+
+    .social-links {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .social-links a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #3b5998;
+    }
+
+    .address-map {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .address-map img {
+        max-width: 300px;
+        border: 1px solid #ddd;
+    }
+
+    .partners {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .partners img {
+        max-width: 150px;
+        margin: 0 10px;
+    }
+
+    .part img {
+        max-width: 300px;
+        margin: 0 10px;
+    }
+
+    
+    .part {
+        display: flex;
+        justify-content: space-between;
+        width: auto; /* Adjust the width of the divider */
+padding: 0px;
+margin: 20px;
+    }
+    h2{
+        width: auto; /* Adjust the width of the divider */
+padding: 0px;
+margin: 20px;
+    }
+
+
+    /**/
+
+    .ønske {
+        width: auto;
+        padding: 20px;
+        border: 1px solid #d3d3d3;
+        text-align: center;
+        margin: 20px;
+        background: rgb(4,4,7);
+background: linear-gradient(90deg, rgba(4,4,7,1) 0%, rgba(78,116,156,1) 15%, rgba(149,200,255,1) 50%, rgba(78,116,156,1) 85%, rgba(53,51,85,1) 100%);
+        }
+    .ønske input[type="text"],
+.ønske input[type="email"] {
+width: 20%;
+padding: 10px;
+margin: 10px 0;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.ønske button {
+width: 20%;
+padding: 10px 20px;
+background-color: #44445f; 
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+margin-top: 10px;
+}
+.ønske button:hover {
+background-color: #3a3a49; 
+}
+
+
+
+.shoppart {
+    width: auto;
+    
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    margin: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background: rgb(4,4,7);
+    background: linear-gradient(90deg, rgba(4,4,7,1) 0%, rgba(78,78,156,1) 15%, rgba(146,146,252,1) 50%, rgba(78,78,156,1) 85%, rgba(53,51,85,1) 100%);
+    }
+
+
+    .nyhedsbrev {
+        border: 3px solid black;
+        
+        text-align: center;
+        margin: 10%;
+    }
+
+
+
+
+    /* footeren */
+footer {
+    background-color: var(--Guld); 
+    color: black;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    width: 250px;
+    height: auto;
+}
+
+.footer-links, .footer-social {
+    text-align: left;
+}
+
+.footer-links h4, .footer-social h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-links ul, .footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li, .footer-social ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a, .footer-social ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+}
+
+.footer-links ul li a:hover, .footer-social ul li a:hover {
+    color: var(--gray); 
+}

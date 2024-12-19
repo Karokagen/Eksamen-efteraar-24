@@ -1,0 +1,564 @@
+:root {
+    --Black:#191924;
+    --blaa:#44445f;
+    --Mlilla:#80455E;
+    --Lilla:#b36b96;
+    --Lyserød:#cc5a71;
+    --hvid:#faf5f6;
+    --Guld:#ae875b;
+}
+
+
+
+
+
+/* Skjuler checkboxen */
+.menu-toggle {
+    display: none;
+}
+
+/* Burger Menu Icon */
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    width: 60px;
+    height: 60px; /* Gør det kvadratisk */
+    justify-content: center; /* Centrerer linjerne vertikalt */
+    align-items: center; /* Centrerer linjerne horisontalt */
+    border-radius: 5px; /* Runde hjørner */
+    position: relative; /* Holder positionen i orden */
+    z-index: 2; /* Sørger for, at burgerikonet er øverst */
+    margin-top: 20px;
+}
+
+.burger-menu span {
+    width: 50px;
+    height: 10px;
+    background-color: var(--hvid);
+    display: block;
+    transition: 0.3s ease;
+}
+
+/* Navigation Links (skjult som standard) */
+.nav-links {
+    list-style: none;
+    display: none; /* Menu skjules som standard */
+    flex-direction: column;
+    /*background: var(--blaa);*/
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 150%;
+    padding: 10px 0;
+    text-align: left;
+    background-color: var(--blaa); /* Baggrundsfarve */
+    border-radius: 5px; /* Gør hjørnerne runde */
+    margin-top: 10px;
+    padding-left: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Lidt skygge for et løftet udseende */
+}
+
+.nav-links li {
+    margin: 10px 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--hvid);
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--hvid);
+}
+
+/* Når checkbox er checked, vises menuen */
+.menu-toggle:checked + .burger-menu + .nav-links {
+    display: flex;
+}
+
+/* Tilføjer lidt ekstra styling */
+header nav {
+    position: relative;
+}
+
+/*Body*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--hvid);
+    
+    background: var(--Black);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 40%, rgba(68,68,95,1) 55%, rgba(128,71,94,1) 70%, rgba(179,107,150,1) 85%, rgba(204,90,113,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover; /* Strækker baggrunden til at dække hele body */
+}
+
+img {vertical-align: middle;}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    width: auto; /* Adjust the width of the divider */
+padding: 0px;
+margin: 20px;
+}
+
+.sections {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+.sections .box {
+    border: 1px solid #ddd;
+    padding: 0px;
+    text-align: center;
+    flex: 1;
+    margin: 20px;
+}
+
+.content-section {
+    margin: 20px;
+   }
+
+/* Header container */
+    header {
+        position: relative;
+        padding: 10px 0;
+        text-align: center;
+    }
+    header .menu {
+        position: relative;
+        top: 20px;
+        left: 20px;
+        font-size: 500%;
+        cursor: pointer;
+        color: #fff;
+    }
+    header img {
+        width: 100%;
+        height: auto;
+        }
+
+    .top {
+        display: flex; 
+        align-items: center; 
+        justify-content: flex-start; 
+        padding: 0 20px; 
+        gap: 10px; 
+    }
+
+    /* Logo styling */
+    .logo {
+        position: absolute;
+        margin-top: -20px;
+    margin-left : 10px;
+        height: 100px; /* Set logo height to 50px */
+        width: auto; /* Maintain the aspect ratio */
+    }
+
+    /* Header image styling */
+    .header-image {
+        width: 100%; /* Ensure the header image spans the full width */
+        height: auto; /* Maintain the aspect ratio */
+        display: block; /* Prevent extra spacing below the image */
+    }
+
+
+/*Divider*/
+    .divider {
+        border-top: 2px solid white; /* Line style */
+        width: auto; /* Adjust the width of the divider */
+        padding: 0px;
+        margin: 20px;
+    }
+
+/*Billede carousel*/
+    .page-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+            .carousel-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .carousel {
+        position: relative;
+        width: 70%; /* Gør karrusellen større */
+        max-width: 800px; /* Sæt en maks bredde */
+        overflow: hidden;
+        border-radius: 10px; /* Runde kanter */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Lidt skygge */
+        background-color: white;
+    }
+    
+    .carousel-images {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .carousel-images img {
+        width: 100%;
+        flex-shrink: 0;
+    }
+    
+    button.next, button.prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 15px;
+        cursor: pointer;
+        font-size: 18px;
+        border-radius: 50%;
+        z-index: 10;
+    }
+    
+    button.prev {
+        left: 10px;
+    }
+    
+    button.next {
+        right: 10px;
+    }
+
+/*Nyhedsbrev*/
+    .newsletter {
+    width: auto;
+    padding: 20px;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    margin: 20px;
+    background: rgb(4,4,7);
+    background: linear-gradient(90deg, rgba(4,4,7,1) 0%, rgba(78,78,156,1) 15%, rgba(146,146,252,1) 50%, rgba(78,78,156,1) 85%, rgba(53,51,85,1) 100%);
+    }
+    .newsletter input[type="text"],
+    .newsletter input[type="email"] {
+    width: 20%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
+    .name-fields {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    }
+    .name-fields input[type="text"] {
+    width: 20%;
+    }
+    .newsletter button {
+    width: 20%;
+    padding: 10px 20px;
+    background-color: #44445f; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    }
+    .newsletter button:hover {
+    background-color: #3a3a49; 
+    }
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: var(--hvid);
+        background-color: var(--blaa);
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+    
+      .button:hover {
+        background-color: #181e24;
+      }
+
+    /*Flex nyhedsbrev til mindre skærm*/
+    @media (max-width: 768px) {
+        .box {
+   
+            font-size: 17px;
+            }  
+            .newsletter input[type="text"],
+            .newsletter input[type="email"] {
+                width: 40%;
+               
+            }
+            
+            .name-fields input[type="text"] {
+                width: 40%;
+            }
+           
+
+            }
+
+/*Reviews*/
+    .reviews {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+        gap: 10px;
+    }
+            
+    .reviews .review-box {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+        flex: 1 1 calc(50% - 20px);
+        box-sizing: border-box;
+        margin: 5px;
+    }
+
+
+/*Info-side only*/
+
+    .social-links {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .social-links a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #3b5998;
+    }
+
+    .address-map {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .address-map img {
+        max-width: 300px;
+        border: 1px solid #ddd;
+    }
+
+    .partners {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .partners img {
+        max-width: 150px;
+        margin: 0 10px;
+    }
+
+    .part img {
+        max-width: 300px;
+        margin: 0 10px;
+    }
+
+    
+    .part {
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        padding: 0px;
+        margin: 20px;
+    }
+
+
+/*Artist-ønsker*/
+
+    .onske {
+        width: auto;
+        padding: 20px;
+        border: 1px solid #d3d3d3;
+        text-align: center;
+        margin: 20px;
+        background: rgb(4,4,7);
+        background: linear-gradient(90deg, rgba(4,4,7,1) 0%, rgba(78,116,156,1) 15%, rgba(149,200,255,1) 50%, rgba(78,116,156,1) 85%, rgba(53,51,85,1) 100%);
+    }
+    
+    .onske input[type="text"],
+    .onske input[type="email"] {
+        width: 20%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    
+/*Ønsker til mindre skærm*/
+    @media (max-width: 768px) {
+        .box {
+
+            font-size: 17px;
+            }  
+            .onske input[type="text"],
+            .onske input[type="email"] {
+                width: 40%;
+            
+            }
+            
+            .name-fields input[type="text"] {
+                width: 40%;
+            }
+           
+
+        }
+
+
+
+
+/*shop-side only*/
+    .shoppart {
+        width: auto;
+        
+        border: 1px solid #d3d3d3;
+        text-align: center;
+        margin: 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        background: rgb(4,4,7);
+        background: linear-gradient(90deg, rgba(4,4,7,1) 0%, rgba(78,78,156,1) 15%, rgba(146,146,252,1) 50%, rgba(78,78,156,1) 85%, rgba(53,51,85,1) 100%);
+    }
+
+/*nyhedsbrev & Artist-side only*/
+    .nyhedsbrev {
+        border: 3px solid black;
+        
+        text-align: center;
+        margin: 10%;
+    }
+
+
+/*Dropdown event kalender*/
+.dropdown {
+    margin: 20px 0;
+}
+
+.dropdown-summary {
+    cursor: pointer;
+    padding: 15px;
+    background: rgb(4,4,7);
+background: linear-gradient(90deg, rgba(4,4,7,1) 0%, rgba(127,78,156,1) 15%, rgba(212,146,251,1) 50%, rgba(127,78,156,1) 85%, rgba(53,51,85,1) 100%);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    display: none;
+    padding: 00px;
+    
+    margin-top: 10px;
+    
+}
+
+.event-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: rgb(4,4,7);
+background: linear-gradient(90deg, rgba(4,4,7,1) 0%, rgba(156,78,142,1) 15%, rgba(252,150,234,1) 50%, rgba(156,78,142,1) 85%, rgba(53,51,85,1) 100%);
+}
+
+.event-item img {
+    max-width: 150px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.event-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/*Review boks på forsiden*/
+.review-box {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px 0;
+    background: linear-gradient(90deg, rgba(4,4,7,1) 0%, rgba(156,78,142,1) 15%, rgba(252,150,234,1) 50%, rgba(156,78,142,1) 85%, rgba(53,51,85,1) 100%);
+}
+.review-box h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.review-box p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* footeren */
+    footer {
+        background-color: var(--Guld); 
+        color: var(--hvid);
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .footer-logo img {
+        width: 250px;
+        height: auto;
+    }
+
+    .footer-links, .footer-social {
+        text-align: left;
+    }
+
+    .footer-links h4, .footer-social h4 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .footer-links ul, .footer-social ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-links ul li, .footer-social ul li {
+        margin-bottom: 10px;
+    }
+
+    .footer-links ul li a, .footer-social ul li a {
+        text-decoration: none;
+        color: var(--hvid);
+        font-size: 16px;
+    }
+
+    .footer-links ul li a:hover, .footer-social ul li a:hover {
+        color: var(--Black); 
+    }
